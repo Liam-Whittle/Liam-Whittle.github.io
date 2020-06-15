@@ -24,7 +24,8 @@
   <link rel="icon" type="image/png" href="favicon.png" />
 
   <!-- Dev Icons -->
-  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel="stylesheet"
+    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
   <style>
     .tooltip .tooltiptext {
@@ -38,6 +39,18 @@
     }
   </style>
 
+  <script>
+    function myFunction() {
+      var x = document.getElementById("Butt");
+      if (x.style.display === "none") {
+        x.style.display = "";
+        x.style.margin = "auto";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>
+
 </head>
 
 <body id="page-top">
@@ -45,7 +58,8 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
     <div class="container">
-      <a style="padding-bottom: 0px;" class="navbar-brand js-scroll-trigger" href="#page-top"><img src="favicon.png" style="width: 2.5rem;"> &nbspLiam Whittle</a>
+      <a style="padding-bottom: 0px;" class="navbar-brand js-scroll-trigger" href="#page-top"><img src="favicon.png"
+          style="width: 2.5rem;"> &nbspLiam Whittle</a>
       <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
         type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
         aria-expanded="false" aria-label="Toggle navigation">
@@ -88,7 +102,7 @@
       </div>
 
       <!-- Masthead Subheading -->
-      <p class="masthead-subheading font-weight-light mb-0">Junior Software Developer</p>
+      <p class="masthead-subheading font-weight-light mb-0">Software Developer</p>
 
     </div>
   </header>
@@ -117,10 +131,10 @@
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-info-circle fa-3x"></i> 
+                <i class="fas fa-info-circle fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/pp.png" alt="">
+            <img class="img-fluid" src="img/portfolio/cs3.png" alt="">
           </div>
         </div>
 
@@ -129,7 +143,7 @@
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-info-circle fa-3x"></i> 
+                <i class="fas fa-info-circle fa-3x"></i>
               </div>
             </div>
             <img class="img-fluid" src="img/portfolio/cs1.png" alt="">
@@ -155,7 +169,7 @@
     <div class="text-center mt-4">
       <a class="btn btn-xl btn-outline-dark" href="https://github.com/Liam-Whittle" target="_blank">
         <i style="font-size: 30px" class="fab fa-github"></i>
-          &nbsp Github &nbsp
+        &nbsp Github &nbsp
         <i style="font-size: 17px" class="fas fa-external-link-alt"></i>
       </a>
     </div>
@@ -165,7 +179,9 @@
   <section class="page-section bg-primary text-white mb-0" id="about">
     <div class="container">
 
-      <img class="img-fluid" style="border-radius: 50%; display: block; margin-left: auto; margin-right: auto; width: 15rem;" src="img/aboutphoto.png" alt="">
+      <img class="img-fluid"
+        style="border-radius: 50%; display: block; margin-left: auto; margin-right: auto; width: 15rem;"
+        src="img/aboutphoto.png" alt="">
       <br>
       <hr>
 
@@ -184,23 +200,41 @@
       <!-- About Section Content -->
       <div class="row">
         <div class="col-lg-4 ml-auto">
-          <p class="lead" style="text-align: center;">Hi, My name is Liam Whittle I am a Junior Software Developer from Auckland, New Zealand.</p>
+          <p class="lead" style="text-align: center;">Hi, My name is Liam Whittle I am a Software Developer from
+            Auckland, New Zealand.</p>
         </div>
         <div class="col-lg-4 mr-auto">
-          <p class="lead" style="text-align: center;">As of 2020 I have graduated with a NZ Diploma of Software Development from <a href="https://techtorium.ac.nz/">Techtorium<a> NZIIT.</p>
+          <p class="lead" style="text-align: center;">If you want to learn more about my techinical skills, please pay a
+            visit to my <a href="https://www.linkedin.com/in/liamnz/">Linkedin</a> page. Thank you.</p>
         </div>
       </div>
-      
-      <br>
-
-      <!-- About Section Button -->
-      <div class="text-center mt-4">
-        <a class="btn btn-xl btn-outline-light" href="https://www.linkedin.com/in/liamnz/" target="_blank">
-          <i style="font-size: 30px" class="fab fa-linkedin-in"></i>
-            &nbsp Linkedin &nbsp
-          <i style="font-size: 17px" class="fas fa-external-link-alt"></i>
-        </a>
+      <hr>
+      <div class="row">
+        <div class="col-lg-4 m-auto">
+          <p class="lead" style="text-align: center;"><em style="color: cornsilk;">Current Status:</em> Looking for
+            Employment</p>
+          <p class="lead" style="text-align: center;"><em style="color: cornsilk;">Highest Qualification:</em> NZ
+            Diploma in Software Development</p>
+          <p class="lead" style="text-align: center;"><em style="color: cornsilk;">Résumé: </em><button
+              onclick="myFunction()"
+              style="border: none; border-radius: .5rem; font-size: 17px; background-color: white; outline: none;">Open/Hide</button>
+          </p>
+        </div>
       </div>
+      <div class="row" id="Butt" style="display: none;">
+        <embed src="img/CV.pdf" width="700px" height="1010px" style="margin: auto;" />
+      </div>
+    </div>
+    <br>
+
+    <!-- About Section Button -->
+    <div class="text-center mt-4">
+      <a class="btn btn-xl btn-outline-light" href="https://www.linkedin.com/in/liamnz/" target="_blank">
+        <i style="font-size: 30px" class="fab fa-linkedin-in"></i>
+        &nbsp Linkedin &nbsp
+        <i style="font-size: 17px" class="fas fa-external-link-alt"></i>
+      </a>
+    </div>
 
     </div>
   </section>
@@ -243,7 +277,7 @@
               </div>
             </div>
             <div class="control-group">
-              <div class="form-group floating-label-form-group controls ">   
+              <div class="form-group floating-label-form-group controls ">
               </div>
             </div>
             <div class="control-group">
@@ -328,7 +362,7 @@
             <div class="row justify-content-center">
               <div class="col-lg-8">
                 <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Project P W.I.P</h2>
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Coming Soon</h2>
                 <!-- Icon Divider -->
                 <div class="divider-custom">
                   <div class="divider-custom-line"></div>
@@ -338,18 +372,24 @@
                   <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/pp.png" alt="">
-                <!-- Portfolio Modal - Text -->
-                <div style="background-color: rgba(33, 42, 94, 0.5); border-radius: 1rem; padding-top: 8px; padding-bottom: 7px; margin-left: 10%; margin-right: 10%;">
-                  <i style="color: white; font-size: 3.5rem;" class="devicon-csharp-plain" data-toggle="tooltip" title="C Sharp" ></i>
-                  <i style="color: white; font-size: 3.5rem;" class="fab fa-unity" data-toggle="tooltip" title="Unity"></i>
-                  <i style="color: white; font-size: 3.5rem;" class="devicon-visualstudio-plain" data-toggle="tooltip" title="Visual Studio"></i>
+                <img class="img-fluid rounded mb-5" src="img/portfolio/cs3.png" alt="">
+                <!-- Portfolio Modal - Text
+                <div
+                  style="background-color: rgba(33, 42, 94, 0.5); border-radius: 1rem; padding-top: 8px; padding-bottom: 7px; margin-left: 10%; margin-right: 10%;">
+                  <i style="color: white; font-size: 3.5rem;" class="devicon-csharp-plain" data-toggle="tooltip"
+                    title="C Sharp"></i>
+                  <i style="color: white; font-size: 3.5rem;" class="fab fa-unity" data-toggle="tooltip"
+                    title="Unity"></i>
+                  <i style="color: white; font-size: 3.5rem;" class="devicon-visualstudio-plain" data-toggle="tooltip"
+                    title="Visual Studio"></i>
                 </div>
                 <br>
                 <hr>
                 <h5 class="mb-5">Project P is a collaborative Unity (C#) project</h5>
-                <p>Project P is a passion project conceptualized by a colleague and I, It is a mobile game application made using Unity and coded in C# Lang. We made this project in hopes of promoting it to a publisher. As of Mid-Jan 2020 Project P is Mid-way through development.</p>
-                <br>
+                <p>Project P is a passion project conceptualized by a colleague and I, It is a mobile game application
+                  made using Unity and coded in C# Lang. We made this project in hopes of promoting it to a publisher.
+                  As of Mid-Jan 2020 Project P is Mid-way through development.</p> -->
+                <h5 class="mb-5">Coming Soon</h5>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
